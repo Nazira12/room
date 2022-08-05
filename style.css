@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    height: 100vh;
+}
+
+header {
+    height: 10vh;
+    border: 1px solid black;
+}
+
+main {
+    height: 90vh;
+    padding: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+main img {
+    height: 100%;
+    width: 90%;
+}
+
+.menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu+div {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.design {
+    height: 40vh;
+}
+
+.design .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.design h1 {
+    width: 30%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #1A1A1A;
+}
+
+.design p {
+    width: 45%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #AAAAAA;
+}
+
+.apartment {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.apartment .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.apartment .rooms,
+.brands .rooms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment .room {
+    width: 47%;
+    margin: 20px 20px;
+}
+
+.brands {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.brands .container {
+    height: 80%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brands .rooms {
+    flex-wrap: wrap;
+}
+
+.brands .room img {
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+
+.brands h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+.brands p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 30px;
+}
+
+.gallery .rooms {
+    height: 80vh;
+    background-image: url(./img/gallery.svg);
+}
+
+.getInTouch,
+.work {
+    height: 40vh;
+}
+
+.getInTouch .container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 40px 0;
+}
+
+.getInTouch h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: #1A1A1A;
+    padding-bottom: 20px;
+}
+
+.getInTouch a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #46856E;
+}
+
+.benefits {
+    height: 70vh;
+    flex-direction: column;
+}
+
+.benefits .rooms, .button .rooms {
+    display: flex;
+    margin: 50px;
+    padding-left: 10%;
+    padding-right: 9%;
+    justify-content: space-between;
+}
+
+.benefits .room{
+    width: 30%;
+}
+
+.benefits .room img {
+    padding-bottom: 20px;
+}
+
+.benefits h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1A1A1A;
+    padding-bottom: 20px;
+}
+
+.benefits p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AAAAAA;
+}
+
+.reviews {
+    height: 90vh;
+    width: 80%;
+    margin-left: 10%;
+    background-image: url(./img/Rectangle\ —\ копия.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.reviews .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.reviews .rooms {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.reviews .room {
+    width: 50%;
+    margin: 70px;
+}
+
+.reviews a{
+    text-decoration: none;
+    margin-left: 70px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.reviews p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.work .container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.work h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: #AAAAAA;
+    margin-bottom: 20px;
+}
+
+.work p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.about {
+    height: 300vh;
+}
+
+.top,
+.middle,
+.bottom {
+    height: 30%;
+    display: flex;
+    padding: 0;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+}
+
+.right,
+.left {
+    justify-content: center;
+}
+
+.top .left {
+    width: 35%;
+}
+
+.middle .right {
+    width: 35%;
+}
+
+.bottom .left {
+    width: 35%;
+}
+
+.about h4, .button h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: #1A1A1A;
+}
+
+.about p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AAAAAA;
+}
+
+.galleryBottom {
+    height: 90vh;
+    background-image: url(./img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button .container{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    background-position: center;
+    margin: 100px 150px;
+}
+
+.button .rooms{
+    width: 70%;
+    justify-content: space-between;
+}
+
+button{
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+footer{
+    height: 70vh;
+    background: #2B2B2B;
+    box-shadow: 0px 400px 0px #2B2B2B;
+    border-radius: 0px;
+}
+
+footer .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    margin: 100px;
+    margin-top: -160px;
+}
+
+footer .room{
+    width: 70%;
+    margin: 30px;
+}
+
+
+footer .rooms{
+    justify-content: space-between;
+    height: 90%;
+    width: 70%;
+}
+
+footer h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+footer p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+textarea, select{
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+
+.menuBurger{
+    height: 40%;
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+    .menuBurger {
+       display: block;
+    }
+    
+    header .container{
+        display: none;
+    }
+
+    main{
+     height: 70%;
+    }    
+
+    .container {
+        width: 90%;
+    }
+
+    .design, .getInTouch, .work{
+        height: fit-content;
+    }
+
+    .design .container, .work .container{
+        flex-direction: column;
+    }
+    .design p, .design h1, .work p, .work h3{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .apartment, .benefits{
+        height: fit-content;
+        padding-bottom: 0;
+    }
+    .apartment .container .rooms{
+        flex-direction: row;
+    }
+
+    .apartment img{
+        width: 110%;
+    }
+
+    .brands {
+        height: 140vh;
+    }
+    .brands .container .rooms{
+        flex-direction: row;
+    }
+
+    .brands .rooms{
+        flex-wrap: wrap;
+    }
+
+    .gallery, .galleryBottom{
+        height: 80vh;
+    }
+
+    .benefits .rooms{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .benefits .room{
+        width: 130%;
+    }
+
+    .reviews{
+        height: fit-content;
+        background-image: none;
+        background-color: #2B2B2B;
+        padding-bottom: 40px;
+    }
+
+    .reviews .container{
+        flex-direction: column;
+    }
+    .reviews .room div{
+        width: 10%;
+    }
+
+    .about{
+        height: 260vh;
+    }
+
+    .about img{
+        width: 150%;
+    }
+    .about .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 70%;
+    }
+    .middle {
+        flex-direction: column-reverse;
+    }
+    .left {
+        width: 70%;
+    }
+    .right {
+        width: 100%;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 70%;
+    }
+    footer {
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .container{
+       flex-direction: column;
+    }
+
+    footer .rooms {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+    }
+    footer img{
+        display: none;
+    }
+
+    .button{
+        height: 65vh;
+    }
+
+    .button .container{
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+
+    .button .container .rooms{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+  
+    .button h3{
+        padding-top: 50px;
+    }
+}
